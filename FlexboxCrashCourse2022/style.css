@@ -9,13 +9,22 @@
   }
 
   .flex-container{
-      display: flex;
+      /* display: flex; */
       background-color: #f4f4f4;
   }
+
+  .flex-container::after{
+      content: '';
+      clear: both;
+      display: block;
+      /* or add style ( style="clear:both;" )element on the dive we want to put on new line */
+  }
+
   .item{
       width:100px;
       height:100px;
       background: #254de4;
       color: #fff;
       margin: 10px;
+      float:left;
   }
