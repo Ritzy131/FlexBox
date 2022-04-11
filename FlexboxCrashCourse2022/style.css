@@ -8,33 +8,36 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  .flex-container{
-      height:400px;
+  .flex-container{   
+      height:500px; 
       display: flex;
+      flex-direction: column;
       background-color: #f4f4f4;
 
+      /*Always is on the main axis*/
       /* justify-content: end; */
       /* justify-content: start; */
       /* justify-content: center; */
       /* justify-content: space-around; */
-      justify-content: space-between;
+      justify-content: end;
       /* justify-content: space-evenly; */
 
+      /*Always is on the cross axis*/
       /* align-items: end; */
       /* align-items: start; */
-      align-items: center;
+      align-items: start;
   }
 
   .item:nth-of-type(1){
-    align-self: flex-start;
+
   }
 
   .item:nth-of-type(2){
-    align-self:center;
+
   }
 
   .item:nth-of-type(3){
-    align-self: end;
+
   }
 
   .item{
