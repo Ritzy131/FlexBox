@@ -9,15 +9,32 @@
   }
 
   .flex-container{
-      /* display: flex; */
+      height:400px;
+      display: flex;
       background-color: #f4f4f4;
+
+      /* justify-content: end; */
+      /* justify-content: start; */
+      /* justify-content: center; */
+      /* justify-content: space-around; */
+      justify-content: space-between;
+      /* justify-content: space-evenly; */
+
+      /* align-items: end; */
+      /* align-items: start; */
+      align-items: center;
   }
 
-  .flex-container::after{
-      content: '';
-      clear: both;
-      display: block;
-      /* or add style ( style="clear:both;" )element on the dive we want to put on new line */
+  .item:nth-of-type(1){
+    align-self: flex-start;
+  }
+
+  .item:nth-of-type(2){
+    align-self:center;
+  }
+
+  .item:nth-of-type(3){
+    align-self: end;
   }
 
   .item{
@@ -26,5 +43,4 @@
       background: #254de4;
       color: #fff;
       margin: 10px;
-      float:left;
   }
