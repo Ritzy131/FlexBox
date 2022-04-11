@@ -14,20 +14,16 @@
       background-color: #f4f4f4;
   }
 
-  .item:nth-of-type(1){
-    flex-shrink: 1;
+  .item:nth-of-type(1){ 
   }
 
   .item:nth-of-type(2){
-    flex-shrink: 2;
   }
 
   .item:nth-of-type(3){
-    flex-shrink: 3;
   }
 
   .item{
-      flex-basis:300px;
       height:100px;
       background: #254de4;
       color: #fff;
@@ -36,4 +32,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    
+      /* flex-basis: 100px; */
+      /* felx : <grow> <shrink> <flex-basis>*/
+      /* flex: 1 0 100px; */
+      /* flex: 1 0 0;       */
+      flex: 1;
   }
